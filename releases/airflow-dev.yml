@@ -6,11 +6,11 @@ metadata:
   annotations:
     flux.weave.works/automated: "true"
 spec:
-  releaseName: airflow-dev
+  releaseName: airflow
   chart:
     repository: https://charts.helm.sh/stable
     name: airflow
-    version: 1.0.0
+    version: 1.6.0
   values:
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
     env:
