@@ -41,3 +41,11 @@ spec:
         maxFailures: 0
         subPath: ""
         wait: 60
+    airflow:
+      image:
+        repository: apache/airflow
+          tag: 2.3.3-python3.7
+          pullPolicy: IfNotPresent
+          pullSecret: ""
+          uid: 50000
+          gid: 0
