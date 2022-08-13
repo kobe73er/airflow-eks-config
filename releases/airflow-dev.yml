@@ -37,6 +37,3 @@ spec:
         maxFailures: 0
         subPath: ""
         wait: 60
-        httpSecret: "airflow-http-git-secret"
-        httpSecretUsernameKey: username
-        httpSecretPasswordKey: password
