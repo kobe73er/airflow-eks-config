@@ -35,5 +35,6 @@ spec:
         repo: https://github.com/kobe73er/airflow-dags.git
         branch: master
         maxFailures: 0
+        revision: "HEAD"
         subPath: ""
-        wait: 60
+        syncWait: 60
