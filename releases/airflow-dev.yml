@@ -12,16 +12,20 @@ spec:
     name: airflow
     version: 1.6.0
   values:
+    images:
+      airflow:
+        repository: "344008713423.dkr.ecr.ap-southeast-1.amazonaws.com/my-airflow"
+        tag: "csdgw98"
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
     env:
       - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
-        value: "False"
+        value: "True"
       - name: "AIRFLOW__KUBERNETES__NAMESPACE"
         value: "dev"
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
-        value: "apache/airflow"
+        value: "344008713423.dkr.ecr.ap-southeast-1.amazonaws.com/my-airflow"
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_TAG"
-        value: "2.3.3-python3.7"
+        value: "csdgw98"
       - name: "AIRFLOW__KUBERNETES__RUN_AS_USER"
         value: "50000"
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
