@@ -5,3 +5,9 @@ kubectl create secret generic \
   --from-literal=username='kobe73er' \
   --from-literal=password='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' \
   --namespace dev
+
+
+kubectl create secret generic \
+  airflow-ssh-git-secret \
+  --from-file=id_rsa=/Users/andrew/.ssh/kobe73er \
+  --namespace dev

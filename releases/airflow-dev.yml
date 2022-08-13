@@ -38,5 +38,4 @@ spec:
         revision: "HEAD"
         subPath: ""
         syncWait: 60
-        httpSecretUsernameKey: username
-        httpSecretPasswordKey: password
+        sshKeySecret: "airflow-ssh-git-secret"
