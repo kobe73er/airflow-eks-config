@@ -37,5 +37,5 @@ spec:
         maxFailures: 0
         revision: "HEAD"
         subPath: ""
-        syncWait: 60
+        wait: 60
         sshKeySecret: "airflow-ssh-git-secret"
